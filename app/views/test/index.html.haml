@@ -1,1 +1,196 @@
-.test hello world test at 201905132000
+.header
+  .header__top
+    .header__top_left
+      %a{:href => "#"}
+        = image_tag "logo.svg", size: "150x100", alt: "ロゴ"
+    .header__top_right
+      %form{:action => "#", :method => "post"}
+        %div
+          %input{:name => "search", :placeholder => "何かお探しですか？", :size => "50", :type => "search"}/
+          %input{:name => "submit", :type => "submit", :value => "検索"}/
+  .header__bottom
+    .header__bottom_left
+      .header__bottom_left--item-category
+        %ul#category
+          %li
+            %a{:href => "#"} カテゴリーから探す
+            %ul.child
+              %li
+                %a{:href => "#"} レディース
+                %ul
+                  %li
+                    %a{:href => "#"} トップス
+                    %ul
+                      %li
+                        %a{:href => "#"} Tシャツ/カットソー(半袖/袖なし)
+                      %li
+                        %a{:href => "#"} Tシャツ/カットソー(七分/長袖)
+                      %li
+                        %a{:href => "#"} シャツ/ブラウス(半袖/袖なし)
+                      %li
+                        %a{:href => "#"} シャツ/ブラウス(七分/長袖)
+                      %li
+                        %a{:href => "#"} ポロシャツ
+                      %li
+                        %a{:href => "#"} キャミソール
+                      %li
+                        %a{:href => "#"} タンクトップ
+                      %li
+                        %a{:href => "#"} ホルターネック
+                      %li
+                        %a{:href => "#"} ニット/セーター
+                      %li
+                        %a{:href => "#"} チュニック
+                      %li
+                        %a{:href => "#"} カーディガン/ボレロ
+                      %li
+                        %a{:href => "#"} アンサンブル
+                      %li
+                        %a{:href => "#"} ベスト/ジレ
+                      %li
+                        %a{:href => "#"} パーカー
+                  %li
+                    %a{:href => "#"} ジャケット/アウター
+                  %li
+                    %a{:href => "#"} パンツ
+                  %li
+                    %a{:href => "#"} スカート
+                  %li
+                    %a{:href => "#"} ワンピース
+                  %li
+                    %a{:href => "#"} 靴
+                  %li
+                    %a{:href => "#"} ルームウェア/パジャマ
+                  %li
+                    %a{:href => "#"} レッグウェア
+                  %li
+                    %a{:href => "#"} 帽子
+                  %li
+                    %a{:href => "#"} バッグ
+                  %li
+                    %a{:href => "#"} アクセサリー
+                  %li
+                    %a{:href => "#"} ヘアアクセサリー
+                  %li
+                    %a{:href => "#"} 小物
+                  %li
+                    %a{:href => "#"} 時計
+              %li
+                %a{:href => "#"} メンズ
+              %li
+                %a{:href => "#"} ベビー・キッズ
+              %li
+                %a{:href => "#"} インテリア・住まい・小物
+              %li
+                %a{:href => "#"} 本・音楽・ゲーム
+              %li
+                %a{:href => "#"} おもちゃ・ホビー・グッズ
+              %li
+                %a{:href => "#"} コスメ・香水・美容
+              %li
+                %a{:href => "#"} 家電・スマホ・カメラ
+              %li
+                %a{:href => "#"} スポーツ・メジャー
+              %li
+                %a{:href => "#"} ハンドメイド
+              %li
+                %a{:href => "#"} チケット
+              %li
+                %a{:href => "#"} 自転車・オートバイ
+              %li
+                %a{:href => "#"} その他
+              %li
+                %a{:href => "#"} カテゴリー一覧
+      .header__bottom_left--item-brand
+        %ul#bland
+          %li
+            %a{:href => "#"} ブランドから探す
+            %ul.child
+              %li
+                %a{:href => "#"} シャネル
+              %li
+                %a{:href => "#"} ナイキ
+              %li
+                %a{:href => "#"} ルイヴィトン
+              %li
+                %a{:href => "#"} シュプリーム
+              %li
+                %a{:href => "#"} アディダス
+              %li
+                %a{:href => "#"} カテゴリー一覧
+    .header__bottom_right
+      %a.sign_in_btn{:href => "#"} ログイン
+      %a.new_user_btn{:href => "#"} 新規会員登録
+%footer.global__footer
+  %nav.footer__top
+    .footer__top-cell
+      %h2.cell__head メルカリについて
+      %li.footer__top-list
+        %a{:href => "/"} 会社概要（運営会社）
+      %li.footer__top-list
+        %a{:href => "/"} 採用情報
+      %li.footer__top-list
+        %a{:href => "/"} プレスリリース
+      %li.footer__top-list
+        %a{:href => "/"} 公式ブログ
+      %li.footer__top-list
+        %a{:href => "/"} メルカリロゴ利用ガイドライン
+      %li.footer__top-icon
+        %i.fab.f__Atwitter
+      %li.footer__top-icon
+        %i.fab.f__Afacebook
+    .footer__top-cell
+      %h2.cell__head ヘルプ＆ガイド
+      %li.footer__top-list
+        %a{:href => "/"} メルカリガイド
+      %li.footer__top-list
+        %a{:href => "/"} らくらくメルカリ便
+      %li.footer__top-list
+        %a{:href => "/"} ゆうゆうメルカリ便
+      %li.footer__top-list
+        %a{:href => "/"} 大型メルカリ便
+      %li.footer__top-list
+        %a{:href => "/"} 車体取引ガイド
+      %li.footer__top-list
+        %a{:href => "/"} メルカリあんしん・あんぜん宣言！
+      %li.footer__top-list
+        %a{:href => "/"} 偽ブランド品目滅への取り組み
+      %li.footer__top-list
+        %a{:href => "/"} メルカリボックス
+    .footer__top-cell.width-expantion
+      %h2.cell__head プライバシーと利用規約
+      .inner
+        %li.footer__top-list
+          %a{:href => "/"} プライバシーポリシー
+        %li.footer__top-list
+          %a{:href => "/"} メルカリ利用規約
+        %li.footer__top-list
+          %a{:href => "/"} あんしんスマホサポート制度に関する利用特約
+        %li.footer__top-list
+          %a{:href => "/"} コンプライアンスポリシー
+      .inner
+        %li.footer__top-list
+          %a{:href => "/"} 個人データの安全管理に係る基本方針
+        %li.footer__top-list
+          %a{:href => "/"} 特定商取引に関する表記
+        %li.footer__top-list
+          %a{:href => "/"} 資金決済法に基づく表示
+        %li.footer__top-list
+          %a{:href => "/"} 法令遵守と犯罪抑止のために
+        %li.footer__top-list
+          %a{:href => "/"} 法令遵守と犯罪抑止のために
+        %li.footer__top-list
+          %a{:href => "/"} 返品・返金ポリシー
+    .footer__top-cell.footer__lang
+      %h2.cell__head 国
+      %li.footer__top-list
+        %a{:href => "/"} 日本
+      %li.footer__top-list
+        %a{:href => "/"} United States
+  .footer__bottom
+    .footer__logo
+      %a{:href => "/"}
+        = image_tag "logo-white.svg", size: "124x33", alt: "mercari"
+    .copy__right
+      © 2019 Mercari
+
