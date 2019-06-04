@@ -1,0 +1,13 @@
+.pickup__items-item
+  .pickup__items-item_picture
+    %a{:href => "#"}
+      = image_tag "notepc.svg", size: "212x200", alt: "カテゴリ"
+  .pickup__items-item_name
+    商品名
+  .pickup__items-item_outline
+    .pickup__items-item_outline_price
+      ¥1,000
+    .pickup__items-item_outline_likes
+      = fa_icon 'heart', class: 'likes-icon'
+  .pickup__items-item_tax
+    （税込）
