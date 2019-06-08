@@ -1,19 +1,19 @@
 .header
   .header__top
-    .header__top_left
+    .header__top-left
       %a{:href => "#"}
         = image_tag "logo.svg", size: "134x36", alt: "ロゴ"
-    .header__top_right
+    .header__top-right
       %form{:action => "#", :method => "post"}
         %div
           %input{:name => "search", :placeholder => "何かお探しですか？", :size => "50", :type => "search"}/
           = fa_icon 'search', class: 'search-icon'
   .header__bottom
-    .header__bottom_left
-      .header__bottom_left--item-category
+    .header__bottom-left
+      .header__bottom-left--item-category
         %ul#category
           %li
-            %i.fas.fa-list.header__bottom_left--item-category_list
+            %i.fas.fa-list.header__bottom-left--itemcategory-list
             %a{:href => "#"} カテゴリーから探す
             %ul.child
               %li
@@ -102,10 +102,10 @@
                 %a{:href => "#"} その他
               %li
                 %a{:href => "#"} カテゴリー一覧
-      .header__bottom_left--item-brand
+      .header__bottom-left--item-brand
         %ul#bland
           %li
-            %i.fas.fa-tag.header__bottom_left--item-category_brand
+            %i.fas.fa-tag.header__bottom-left--itemcategory-brand
             %a{:href => "#"} ブランドから探す
             %ul.child
               %li
@@ -120,6 +120,6 @@
                 %a{:href => "#"} アディダス
               %li
                 %a{:href => "#"} カテゴリー一覧
-    .header__bottom_right
+    .header__bottom-right
       %a.sign_in_btn{:href => "#"} ログイン
       %a.new_user_btn{:href => "#"} 新規会員登録
