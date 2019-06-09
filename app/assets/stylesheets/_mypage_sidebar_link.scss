@@ -1,17 +1,17 @@
 .mypage-menu-list {
-  padding:0;
   margin:0;
+  padding:0;
   &__item {
     border-top: 1px solid #eee;
     .mypage-menu-link {
-      position:relative;
+      background:#fff;
+      color:#333;
       display:block;
+      font-size:14px;
       list-style:none;
       margin:0;
       padding:16px;
-      background:#fff;
-      font-size:14px;
-      color:#333;
+      position:relative;
       text-decoration:none;
       &:hover {
         background: #eeeeee;
@@ -21,9 +21,9 @@
         }
       }
       .fa-chevron-right {
-      float:right;
-      cursor:pointer;
-      margin: 0 auto;
+        cursor:pointer;
+        float:right;
+        margin: 0 auto;
       }
     }
   }

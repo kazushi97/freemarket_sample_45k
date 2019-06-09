@@ -2,47 +2,46 @@
   .mypage-content
     .info
       .user-info
-        %a.user-link{:href => "/"}
-          %img.user-image{:alt => "noname", :src => "member_photo.png"}/
+        = link_to "/", class: 'user-link' do
+          = image_tag 'member_photo.png', alt: 'user_photo', class: 'user-image'
           %h2.user-name ユーザーネーム
           .inner-bar
             .evaluation-listings
               %span.evaluation-text 評価
               %i.evaluation-count 0
-              %span.numberof-listings-text 出品数
+              %span.numberof-listings 出品数
               %i.numberof-listings-count 0
       .notice-todo
-        %a.notice-link{:href => "/"}
-          .notice お知らせ
-        %a.todo-link{:href => "/"}
-          .todo
-            やることリスト
+        .notice.active
+          お知らせ
+        .todo.inactive
+          やることリスト
       .notice-box
-        %a.notice-list{:href => "/"}
-          .notice-icon
-            %img{:alt => "mercari", :height => "48px", :src => "mercari_icon.png", :width => "48px"}/
-          %li.list
+        = link_to "/", class: 'notice-list' do
+          .notice-list__icon
+            = image_tag 'mercari_icon.png', alt: 'mercari', height: '48px', width: '48px'
+          %li.notice-list__list
             事務局から個別メッセージ「ログイン通知」
-          %span.notice-timing ７日前
-          %i.fas.fa-chevron-right.right-arrow
-        %a.notice-list{:href => "/"}
-          .notice-icon
-            %img{:alt => "mercari", :height => "48px", :src => "mercari_icon.png", :width => "48px"}/
-          %li.list
+          %i.far.fa-clock.notice-list__clock
+          %span.notice-list__timing 6日前
+          %i.fas.fa-chevron-right.notice-list__right-arrow
+        = link_to "/", class: 'notice-list' do
+          .notice-list__icon
+            = image_tag 'mercari_icon.png', alt: 'mercari', height: '48px', width: '48px'
+          %li.notice-list__list
             事務局から個別メッセージ「ログイン通知」
-          %span.notice-timing 6日前
-          %i.fas.fa-chevron-right.right-arrow
+          %i.far.fa-clock.notice-list__clock
+          %span.notice-list__timing 6日前
+          %i.fas.fa-chevron-right.notice-list__right-arrow
+      .todo-box
     .bought-product 購入した商品
     .bought-info
-      %a.bought-info__leftlink{:href => "/"}
-        .during-trading 取引中
-      %a.bought-info__rightlink{:href => "/"}
-        .past-trading
-          過去の取引
+      .during-trading.active
+        取引中
+      .past-trading.inactive
+        過去の取引
     .bought-detail
-      .bought-detail__icon
-      .bought-detail__nothing 取引中の商品がありません
+      .no-item-icon
+      .no-item-text 取引中の商品がありません
   = render 'mypage_sidebar'
--# %a.sell-btn{:href => "/"}
--#   .sell-btn__text 出品
--#   %i.fas.fa-camera
+= render 'banner'
