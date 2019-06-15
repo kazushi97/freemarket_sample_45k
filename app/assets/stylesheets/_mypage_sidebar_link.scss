@@ -2,9 +2,9 @@
   margin:0;
   padding:0;
   &__item {
-    border-top: 1px solid #eee;
+    border-top: 1px solid $bordercolor;
     .mypage-menu-link {
-      background:#fff;
+      background-color: $contentsbgcolor;
       color:#333;
       display:block;
       font-size:14px;

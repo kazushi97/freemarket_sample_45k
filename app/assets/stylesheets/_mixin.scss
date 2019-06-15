@@ -10,7 +10,7 @@
 }
 
 @mixin tab-content-nothing {
-  background: #FFF;
+  background: $contentsbgcolor;
   color: #ccc;
   font-size: 16px;
   font-weight: 600;
@@ -20,8 +20,8 @@
 }
 
 @mixin tab-content-list {
-  background-color:#FFF;
-  border-bottom:2px solid #eee;
+  background-color: $contentsbgcolor;
+  border-bottom:2px solid $bordercolor;
   display:block;
   font-size:14px;
   height:48px;
