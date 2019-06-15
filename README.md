@@ -52,12 +52,15 @@ belongs_to :user
 | :--- | :---: | :---: |
 | id | integer | null:false |
 | name | string | null:false,VARCHAR(40),index:true |
-| price | integer | null:false, CHAR(9999999) |
+| price | string | null:false, VARCHAR(9999999) |
 | size | string | null:false |
 | description | string | null:false,VARCHAR(1000) |
 | favorite | integer | null:false |
 | prodution_quality | string | null:false |
-| shipping | enum(way,price,area,date) | null:false |
+| shipping_price | enum(buyer,exhibitor) | null:false |
+| shipping_way | enum(undicided,kuroneko,yupack,yumail) | null:true |
+| shipping_place | string | null:false |
+| shipping_date | enum(1-2days,2-3days,4-7days) | null:false |
 | product_status | string | null:false |
 | user_id | integer | null:false, foreign_key: true|
 | bland_id | integer | null:true, foreign_key: true|
@@ -100,6 +103,7 @@ belongs_to :product
 
 ### Association
 - belongs_to :product
+- belongs_to :user
 
 ***
 ***
@@ -133,7 +137,7 @@ belongs_to :product
 | Column | Type| Option |
 | :---: | :---: | :---: |
 | id | integer | null:false |
-| comment | string | null:false |
+| comment | string | null:false,VARCHAR(1000) |
 | user_id | integer | null:false, foreign_key: true |
 | product_id | integer | null:false, foreign_key: true |
 
