@@ -9,7 +9,7 @@ $(function() {
     slidesToShow: 1,
     centerMode: true,
     centerPadding: '0px',
-    variableWidth : true,
+    variableWidth: true,
     infinite: true
   });
 });
