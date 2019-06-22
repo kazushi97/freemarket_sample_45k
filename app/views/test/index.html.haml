@@ -1,0 +1,20 @@
+= render "header"
+.pickup
+  %h2 ピックアップカテゴリー
+  %h3
+    %a{:href => "#"} レディース 新着アイテム
+  .pickup__items
+    = render "pickup"
+    = render "pickup"
+    = render "pickup"
+    = render "pickup"
+#main_visual
+  .main_visual_in
+    %div
+      = image_tag "logo.svg", alt: "s1"
+    %div
+      = image_tag "banner-camp.jpg", alt: "s2"
+    %div
+      = image_tag "banner-natsukashi.jpg", alt: "s3"
+=render "banner"
+=render "footer"
