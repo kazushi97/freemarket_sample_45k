@@ -1,0 +1,33 @@
+@mixin tab-content-icon {
+  background-image: image-url("white_icon.png");
+  background-size: cover;
+  bottom: 120px;
+  height: 80px;
+  left: 310px;
+  position: absolute;
+  top: 40px;
+  width: 80px;
+}
+
+@mixin tab-content-nothing {
+  background: $contentsbgcolor;
+  color: #ccc;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 160px 0 60px;
+  text-align: center;
+  width: 100%;
+}
+
+@mixin tab-content-list {
+  background-color: $contentsbgcolor;
+  border-bottom:2px solid $bordercolor;
+  display:block;
+  font-size:14px;
+  height:48px;
+  padding:16px;
+  overflow:hidden;
+  &:hover {
+    background-color: #fafafa;
+  }
+}
